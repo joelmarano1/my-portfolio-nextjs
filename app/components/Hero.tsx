@@ -22,21 +22,27 @@ const Hero = () => {
         <div className="grid lg:grid-cols-9 grid-cols-6">
           <div className="lg:col-span-1 col-span-1">
             <div className="flex flex-col justify-items-center pt-14 gap-10 text-2xl text-white">
-              <FaFacebookF />
-              <FaLinkedinIn />
-              <FaGithubAlt/>
+              <Link href={'https://www.facebook.com/jhoel029'} target="_blank">
+                <FaFacebookF />
+              </Link>
+              <Link href={'https://www.linkedin.com/in/joel-mara%C3%B1o-b33623187/'} target="_blank">
+                <FaLinkedinIn />
+              </Link>
+              <Link href={'https://github.com/joelmarano1'} target="_blank">
+                <FaGithubAlt/>
+              </Link>
             </div>
           </div>
           <div className="lg:col-span-8 col-span-5">
             <div className=" mb-[50px] lg:mb-0 text-white">
               <div className="flex items-center">
-                  <span className="text-md sm:text-3xl pl-1 font-medium"> Hello, I'm </span>
+                  <span className="text-md sm:text-3xl pl-1 font-medium "> Hello, I'm </span>
                   <span className='vio-text text-lg sm:text-3xl pl-2 font-semibold'> Joel Maraño <span className="wave" role="img" aria-labelledby="wave">👋🏻</span></span>  
               </div>
-              <h1 className="pt-3 text-5xl lg:text-6xl font-bold "><span className="vio-text">Full Stack</span> Developer</h1>
-              <p className='lg:pb-10 pb-8 pt-2 pl-1 text-[.6rem]  md:text-md lg:text-lg text-gray-400'>A dedicated programmer who crafts websites and applications full-time, driven by both passion and livelihood.</p>
+              <h1 className="pt-3 text-5xl lg:text-6xl font-bold "><span className="">Full Stack</span> <span className="vio-text">Developer</span></h1>
+              <p className='lg:pb-10 pb-8 pt-2 pl-1 text-[.65rem]  md:text-md lg:text-lg text-gray-400'>A dedicated programmer who crafts websites and applications full-time, driven by both passion and livelihood.</p>
               <div className="flex flex-col lg:flex-row lg:items-center justify-start gap-4">
-                <Link href='mailto:joelmarano1@gmail.com'>
+                <Link href='#'>
                   <button  className="flex items-center text-center lg:text-start  p-[.63rem] px-16 lg:px-[1rem] bg-violet-800 text-white font-semibold rounded-full shadow-md hover:bg-violet-700 focus:outline-violet-700 ">
                     My Projects <FaArrowRight className="ml-2"/>
                   </button> 
