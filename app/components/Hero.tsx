@@ -6,18 +6,17 @@ import { variantsLTR,variantsRTL } from "../constants"
 const Hero = () => {  
  
   return (
-    <section className="grid lg:grid-cols-12 pt-[100px] lg:pt-[0px] gap-0 grid-cols-1  items-center lg:px-4 pb-32">
+    <section className="grid lg:grid-cols-12 pt-[100px] lg:pt-[0px] gap-0 grid-cols-1  items-center lg:px-4 pb-12 ">
       <MotionDiv 
         variants={variantsLTR}
         initial="hidden"
-        animate="visible"
         transition={{
-          delay:0.1,
-            ease:"anticipate",
-          
-          duration:1.2,
+          delay:0,
+          ease:"anticipate",
+          duration:0.75,
         }}
         viewport={{amount:0}}
+        whileInView="visible"
         className="lg:col-span-6">
         <div className="grid lg:grid-cols-9 grid-cols-6">
           <div className="lg:col-span-1 col-span-1">
@@ -60,26 +59,25 @@ const Hero = () => {
       <MotionDiv 
         variants={variantsRTL}
         initial="hidden"
-        animate="visible"
+        whileInView="visible"
         transition={{
-          delay:0.1,
-            ease:"anticipate",
-          
-          duration:1.2,
+          delay:0,
+          ease:"anticipate",
+          duration:0.75,
         }}
         viewport={{amount:0}}
         className="lg:col-span-6">
         <div className="lg:block hidden">
           <svg className="hero__blob  " viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
             <defs >
-              <clipPath id="shape" >
+              <clipPath id="shape"  >
                 <path fill="#9340FF" d="M48.6,-54.3C61.7,-46.9,70.1,-30.4,73.6,-12.7C77,5,75.5,23.9,65.4,34.4C55.3,45,36.7,47.3,20.3,51.5C3.8,55.6,-10.4,61.6,-20.4,57.4C-30.4,53.1,-36.2,38.7,-39.6,26.1C-43.1,13.5,-44.3,2.7,-45.9,-11.6C-47.5,-25.9,-49.6,-43.7,-42,-52C-34.4,-60.3,-17.2,-59.2,0.3,-59.5C17.7,-59.8,35.5,-61.6,48.6,-54.3Z" transform="translate(100 100)" />
               </clipPath>
             </defs>
             <image 
-              className="hero__blob-img"
+              className="hero__blob-img "
               xlinkHref="imghero1.jpg" 
-              clip-path="url(#shape)"
+              clipPath="url(#shape)"
               x={'52'}
               y={'42'}
             />

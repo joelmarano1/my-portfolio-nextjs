@@ -13,3 +13,7 @@ export const variantsRTL = {
     hidden: {  opacity:0,  x:100,},
     visible: {opacity: 1, x:0},
 };
+export const variants = {
+    hidden: {  opacity:0, },
+    visible: {opacity: 1, },
+};

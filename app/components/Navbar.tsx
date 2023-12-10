@@ -2,7 +2,7 @@ import Link from "next/link"
 
 const Navbar = () => {
   return (
-  <nav className="flex items-center  justify-between mx-auto max-w-[1440px] px-8 md:px-16 lg:px-16 2xl:px-0 relative z-30 pt-12">
+  <nav className="flex items-center  justify-between mx-auto  px-8 md:px-16 lg:px-28 2xl:px-56 relative z-30 pt-12">
        <span className='cursor-pointer text-white text-2xl font-bold'>
            &lt;/dev&gt;
        </span>

@@ -19,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={` bg-gradient-to-br from-[#120E16] to-[#0c0612] ${montserrat.className}`}>
+      <body className={` bg-gradient-to-br from-[#120E16] to-[#100b15] ${montserrat.className}`}>
         <Navbar/>
         {children}
         <Footer/>
