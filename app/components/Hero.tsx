@@ -6,7 +6,7 @@ import { variantsLTR,variantsRTL } from "../constants"
 const Hero = () => {  
  
   return (
-    <section className="grid lg:grid-cols-12 pt-[100px] lg:pt-[0px] gap-0 grid-cols-1  items-center lg:px-4 lg:pb-24 ">
+    <section className="grid lg:grid-cols-12 pt-[100px] lg:pt-[0px] gap-0 grid-cols-1  items-center lg:px-4 lg:pb-28 ">
       <MotionDiv 
         variants={variantsLTR}
         initial="hidden"

@@ -18,19 +18,27 @@ export const variants = {
     visible: {opacity: 1, },
 };
 export const PROJECTS = [
-	{
-        title: 'OTTSS v.1',
-        logo:'/ssprojects/tieza-logo.png',
-        company:'TIEZA',
-        url:'https://traveltaxservices.tieza.online/public/fulltax',
-        description:"A web app enabling convenient online tax payments for Philippine passengers. Present the acknowledgment receipt at the airport for a hassle-free experience."
+    {
+        title: 'PAWTASTIC',
+        logo:'/ssprojects/paw.png',
+        company:'PETS',
+        url:'https://pawtastic-tawny.vercel.app/',
+        description:"An work examination related to React.js that I transformed into my personal project; essentially, it's a scheduling system designed for pets.",
+    
     },
     {
         title: 'CollectPro Listings',
         logo:'/ssprojects/collectprologo.png',
         company:'CollectGroup UK',
         url:'',
-        description:"An e-commerce platform allowing users to seamlessly integrate eBay, Shopify, and Etsy accounts, facilitating effortless cross-listing of products across diverse e-commerce channels."
+        description:"An e-commerce platform allowing users to seamlessly integrate eBay, Shopify, and Etsy accounts, facilitating effortless cross-listing of products across diverse e-commerce channels.",
         
+    },
+    {
+        title: 'OTTSS v.1',
+        logo:'/ssprojects/tieza-logo.png',
+        company:'TIEZA',
+        url:'https://traveltaxservices.tieza.online/public/fulltax',
+        description:"A web app enabling convenient online tax payments for Philippine passengers. Present the acknowledgment receipt at the airport for a hassle-free experience."
     },
 ];

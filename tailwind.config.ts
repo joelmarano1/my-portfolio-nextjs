@@ -21,7 +21,6 @@ const config: Config = {
         '3':'3rem',
         '5':'5rem',
         '7.5':'7.5rem',
-
         '10': '10rem',
       }
     },

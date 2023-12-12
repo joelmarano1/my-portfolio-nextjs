@@ -8,7 +8,7 @@ import { AiOutlineHtml5 } from "react-icons/ai";
 const TechStack = () => {  
  
   return (
-    <section className="grid lg:grid-cols-12  pt-[100px] lg:pt-[0px]  grid-cols-1 gap-10 lg:gap-16 lg:px-4 pb-32">
+    <section className="grid lg:grid-cols-12  pt-[100px] lg:pt-[0px]  grid-cols-1 gap-10 lg:gap-10 lg:px-4 pb-32">
       <div className="lg:col-span-12">
         <MotionDiv
             variants={variantsLTR}
