@@ -22,7 +22,7 @@ const TechStack = () => {
             whileInView="visible"
             >
             <h1 className="text-md text-white pl-1">SKILLS</h1>
-            <h1 className="text-4xl md:text-5xl vio-text font-extrabold"><span className="text-white">My Tech</span>Stack</h1>
+            <h1 className="text-3xl md:text-5xl vio-text font-extrabold"><span className="text-white">My Tech</span>Stack</h1>
         </MotionDiv>
       </div>
       <div className="lg:col-span-6 rounded-lg h-full ">

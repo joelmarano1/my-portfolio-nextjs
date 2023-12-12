@@ -65,7 +65,16 @@
  width: 120px; 
 }
 @layer base {
-.scaleLogo {
-  @apply transition ease-in-out delay-0  hover:-translate-y-1 hover:scale-110 duration-150 cursor-pointer
+  .scaleLogo {
+    @apply transition ease-in-out delay-0  hover:-translate-y-1 hover:scale-110 duration-150 cursor-pointer
+  }
 }
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }

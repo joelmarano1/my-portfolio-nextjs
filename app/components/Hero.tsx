@@ -6,7 +6,7 @@ import { variantsLTR,variantsRTL } from "../constants"
 const Hero = () => {  
  
   return (
-    <section className="grid lg:grid-cols-12 pt-[100px] lg:pt-[0px] gap-0 grid-cols-1  items-center lg:px-4 pb-12 ">
+    <section className="grid lg:grid-cols-12 pt-[100px] lg:pt-[0px] gap-0 grid-cols-1  items-center lg:px-4 lg:pb-24 ">
       <MotionDiv 
         variants={variantsLTR}
         initial="hidden"
@@ -42,12 +42,12 @@ const Hero = () => {
               <p className='lg:pb-10 pb-8 pt-2 pl-1 text-[.65rem]  md:text-md lg:text-lg text-gray-400'>A dedicated programmer who crafts websites and applications full-time, driven by both passion and livelihood.</p>
               <div className="flex flex-col lg:flex-row lg:items-center justify-start gap-4">
                 <Link href='#'>
-                  <button  className="flex items-center text-center lg:text-start  p-[.63rem] px-16 lg:px-[1rem] bg-violet-800 text-white font-semibold rounded-full shadow-md hover:bg-violet-700 focus:outline-violet-700 ">
+                  <button  className="flex items-center text-center lg:text-start  p-[.63rem]  px-14 xs:px-16 lg:px-[1rem] bg-violet-800 text-white font-semibold rounded-full shadow-md hover:bg-violet-700 focus:outline-violet-700 ">
                     My Projects <FaArrowRight className="ml-2"/>
                   </button> 
                 </Link>
                 <Link href='mailto:joelmarano1@gmail.com'>
-                  <button  className="flex items-center text-center lg:text-start  p-2 outline px-16 lg:px-[1rem] text-white font-semibold rounded-full shadow-md hover:text-violet-500 focus:outline-none focus:ring-2 focus:ring-violet-700 focus:ring-opacity-75">
+                  <button  className="flex items-center text-center lg:text-start  p-2 outline px-14 xs:px-16 lg:px-[1rem] text-white font-semibold rounded-full shadow-md hover:text-violet-500 focus:outline-none focus:ring-2 focus:ring-violet-700 focus:ring-opacity-75">
                     Contact Me <FaTelegramPlane className="ml-2"/>
                   </button> 
                 </Link>
