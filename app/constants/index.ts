@@ -1,4 +1,5 @@
 import { Montserrat } from "next/font/google";
+import PrevArrow from "../components/slick-customize/PrevArrow"
 
 export const montserrat = Montserrat({
     //  weight: "700",
@@ -17,28 +18,25 @@ export const variants = {
     hidden: {  opacity:0, },
     visible: {opacity: 1, },
 };
-export const PROJECTS = [
+export const SCREENSHOTS = [
     {
-        title: 'PAWTASTIC',
-        logo:'/ssprojects/paw.png',
-        company:'PETS',
-        url:'https://pawtastic-tawny.vercel.app/',
-        description:"An work examination related to React.js that I transformed into my personal project; essentially, it's a scheduling system designed for pets.",
-    
+        title: 'OTTSS v.1',
+        tag:'ottss',
+        images:[
+            '/ssprojects/onlinettax.png',
+            '/ssprojects/onlinettax2.png',
+            '/ssprojects/onlinettax3.png',
+            '/ssprojects/onlinettax4.png',
+        ]
     },
     {
         title: 'CollectPro Listings',
-        logo:'/ssprojects/collectprologo.png',
-        company:'CollectGroup UK',
-        url:'',
-        description:"An e-commerce platform allowing users to seamlessly integrate eBay, Shopify, and Etsy accounts, facilitating effortless cross-listing of products across diverse e-commerce channels.",
-        
-    },
-    {
-        title: 'OTTSS v.1',
-        logo:'/ssprojects/tieza-logo.png',
-        company:'TIEZA',
-        url:'https://traveltaxservices.tieza.online/public/fulltax',
-        description:"A web app enabling convenient online tax payments for Philippine passengers. Present the acknowledgment receipt at the airport for a hassle-free experience."
+        tag:'listings',
+        images:[
+            '/ssprojects/crosslist.png',
+            '/ssprojects/crosslist2.png',
+            '/ssprojects/crosslist3.png',
+            '/ssprojects/crosslist4.png',
+        ]
     },
 ];
