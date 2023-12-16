@@ -39,4 +39,13 @@ export const SCREENSHOTS = [
             '/ssprojects/crosslist4.png',
         ]
     },
+    {
+        title: 'PAWTASTIC',
+        tag:'pawtastic',
+        images:[
+            '/ssprojects/paw1.png',
+            '/ssprojects/paw2.png',
+            '/ssprojects/paw3.png',
+        ]
+    },
 ];
