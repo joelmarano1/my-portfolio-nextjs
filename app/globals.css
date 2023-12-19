@@ -16,7 +16,10 @@
   }
 }
 
-
+.bg-image{
+  background-image: url('/bg3.png');
+  background-size: contain;
+}
 .vio-text{
   color:#9340FF;
 }
@@ -25,7 +28,7 @@
 }
 .wave {
   animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
-  animation-duration: 2.1s; /* Change to speed up or slow down */
+  animation-duration: 1.5s; /* Change to speed up or slow down */
   animation-iteration-count: infinite; /* Never stop waving :) */
   transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
   display: inline-block;
@@ -59,10 +62,14 @@
 }
 .hero__blob {
   fill: var(--first-color);
-  filter: drop-shadow(20px 30px 14px rgba(97, 23, 195, 0.2));
+  filter: drop-shadow(10px 70px 14px rgba(109, 42, 196, 0.15));
 }
 .hero__blob-img{
- width: 120px; 
+ width: 180px;
+}
+.about__blob {
+  fill: var(--first-color);
+  filter: drop-shadow(30px 20px 54px rgba(109, 42, 196, 0.5));
 }
 @layer base {
   .scaleLogo {

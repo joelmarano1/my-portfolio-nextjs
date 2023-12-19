@@ -21,8 +21,8 @@ const TechStack = () => {
             viewport={{amount:0}}
             whileInView="visible"
             >
-            <h1 className="text-md text-white pl-1">SKILLS</h1>
-            <h1 className="text-3xl md:text-5xl vio-text font-extrabold"><span className="text-white">My Tech</span>Stack</h1>
+            <h1 className="text-xs lg:text-md text-white lg:pl-1">SKILLS</h1>
+            <h1 className="text-2xl md:text-5xl vio-text font-extrabold"><span className="text-white">My Tech</span>Stack</h1>
         </MotionDiv>
       </div>
       <div className="lg:col-span-6 rounded-lg h-full ">
@@ -38,7 +38,7 @@ const TechStack = () => {
             viewport={{amount:0}}
             whileInView="visible">
             
-            <h1 className="text-2xl md:text-3xl font-semibold text-white underline underline-offset-8 decoration-[#9340FF]">Frontend </h1>
+            <h1 className="text-2xl md:text-3xl font-semibold text-white "><span className="underline underline-offset-8 decoration-[#9340FF]">Front</span>end </h1>
             <div className=" mt-5 text-slate-300  text-center grid grid-cols-4 lg:grid-cols-6 gap-5 lg:gap-10 text-xs ">
                 <div className="flex flex-col items-center scaleLogo hover:text-[#E8D44D]">
                     <TbBrandJavascript size="52" />
@@ -101,7 +101,7 @@ const TechStack = () => {
             viewport={{amount:0}}
             whileInView="visible"
         >
-            <h1 className="text-2xl md:text-3xl font-semibold text-white underline underline-offset-8 decoration-[#9340FF]">Backend </h1>
+            <h1 className="text-2xl md:text-3xl font-semibold text-white "><span className="underline underline-offset-8 decoration-[#9340FF]">Back</span>end </h1>
             <div className=" mt-5 text-slate-300  text-center grid grid-cols-4 lg:grid-cols-6 gap-5 lg:gap-10 text-xs ">
                 <div className="flex flex-col items-center scaleLogo hover:text-[#57629E] ">
                     <FaPhp size="52" />

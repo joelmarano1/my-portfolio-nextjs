@@ -68,7 +68,7 @@ const MyProject = () => {
     setSS(newData);
   }
   return (
-    <section className="grid lg:grid-cols-12  pt-[100px] lg:pt-[0px]  grid-cols-1 gap-10 lg:gap-10 lg:px-4 lg:pb-32">
+    <section className="grid lg:grid-cols-12  pt-[100px] lg:pt-[0px]  grid-cols-1 gap-10 lg:gap-10 lg:px-4 lg:pb-72">
       <div className="lg:col-span-12">
         <MotionDiv
             variants={variantsLTR}
@@ -81,8 +81,8 @@ const MyProject = () => {
             viewport={{amount:0}}
             whileInView="visible"
             >
-            <h1 className="text-md text-white pl-1">PROJECTS</h1>
-            <h1 className="text-3xl md:text-5xl vio-text font-extrabold"><span className="text-white">Completed</span> Projects</h1>
+            <h1 className="text-xs lg:text-md text-white lg:pl-1">PROJECTS</h1>
+            <h1 className="text-2xl md:text-5xl vio-text font-extrabold"><span className="text-white">Completed</span> Projects</h1>
         </MotionDiv>
       </div>
       

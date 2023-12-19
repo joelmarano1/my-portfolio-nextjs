@@ -3,6 +3,7 @@ import { FaArrowRight, FaFacebookF, FaGithubAlt, FaLinkedinIn, FaTelegramPlane} 
 import {motion} from 'framer-motion'
 import { MotionDiv } from "./MotionDiv"
 import { variantsLTR,variantsRTL } from "../constants"
+import Image from "next/image"
 const Hero = () => {  
  
   return (
@@ -68,19 +69,22 @@ const Hero = () => {
         viewport={{amount:0}}
         className="lg:col-span-6">
         <div className="lg:block hidden">
-          <svg className="hero__blob  " viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-            <defs >
-              <clipPath id="shape"  >
-                <path fill="#9340FF" d="M48.6,-54.3C61.7,-46.9,70.1,-30.4,73.6,-12.7C77,5,75.5,23.9,65.4,34.4C55.3,45,36.7,47.3,20.3,51.5C3.8,55.6,-10.4,61.6,-20.4,57.4C-30.4,53.1,-36.2,38.7,-39.6,26.1C-43.1,13.5,-44.3,2.7,-45.9,-11.6C-47.5,-25.9,-49.6,-43.7,-42,-52C-34.4,-60.3,-17.2,-59.2,0.3,-59.5C17.7,-59.8,35.5,-61.6,48.6,-54.3Z" transform="translate(100 100)" />
-              </clipPath>
-            </defs>
-            <image 
+          <div className="absolute">
+
+          </div>
+          <svg className="hero__blob" viewBox="0 0 200 200">
+              <defs>
+                  <clipPath id="svgPath" >
+                      <path fill="#FFFFFF"   d="M61.3,-50.8C74.9,-31.7,78.5,-6.5,72.3,14.9C66.2,36.3,50.3,53.9,34.4,55.3C18.6,56.7,2.8,41.9,-12.9,32.2C-28.6,22.6,-44.2,18.1,-50.9,6.5C-57.6,-5.1,-55.4,-23.8,-45.5,-42C-35.5,-60.3,-17.8,-78.1,3,-80.5C23.8,-82.9,47.6,-69.9,61.3,-50.8Z" transform="translate(100 100)" />
+                  </clipPath>
+              </defs>
+              <image 
               className="hero__blob-img "
               xlinkHref="imghero1.jpg" 
-              clipPath="url(#shape)"
-              x={'52'}
-              y={'42'}
-            />
+              clipPath="url(#svgPath)"
+              x={'25'}
+              y={'-10'}
+          />
           </svg>
         </div>
         <div className="lg:hidden block">

@@ -49,3 +49,17 @@ export const SCREENSHOTS = [
         ]
     },
 ];
+export const ABOUT = [
+    {
+        years: '5+',
+        type: 'Years of Experience'
+    },
+    {
+        years: '7+',
+        type: 'Finished Projects'
+    },
+    {
+        years: '4',
+        type: 'Companies Worked'
+    },
+]
