@@ -21,11 +21,11 @@ const Aboutme = () => {
                 viewport={{amount:0}}
                 whileInView="visible"
                 >
-                <h1 className="text-xs lg:text-md text-white lg:pl-1">About</h1>
-                <h1 className="text-2xl md:text-5xl vio-text font-extrabold"><span className="text-white">My Code </span>Adventure</h1>
+                <h1 className="text-xs lg:text-md text-white dark:text-[#2C3F50] lg:pl-1">About</h1>
+                <h1 className="text-2xl md:text-5xl vio-text font-extrabold"><span className="text-white dark:text-[#2C3F50]">My Code </span>Adventure</h1>
             </MotionDiv>
         </div>
-        <div className="lg:col-span-6 flex flex-row justify-center">
+        <div className="lg:col-span-6 flex flex-row lg:justify-start justify-center">
           <MotionDiv
               variants={variantsLTR}
               initial="hidden"
@@ -52,7 +52,7 @@ const Aboutme = () => {
                 viewport={{amount:0}}
                 whileInView="visible"
                 >
-             <div className="text-white text-xs md:text-md  lg:text-lg">
+             <div className="text-white dark:text-[#2C3F50] text-xs md:text-md  lg:text-lg">
                 <p className="indent-10 pb-2">
                   In 2018, I entered the programming field as a <span className="vio-text font-semibold">C# developer</span>, focusing on desktop applications, database management, and direct client training with on-the-spot debugging. In 2021, I transitioned to web development, currently employed as a <span className="vio-text font-semibold">PHP/Laravel Developer</span> in a private company. 
                 </p>
@@ -61,10 +61,10 @@ const Aboutme = () => {
                 </p>
              </div>
              <div className="flex flex-row gap-10 lg:gap-16 pt-5 justify-center">
-                  {ABOUT.map((about:AboutItem) => 
-                    <div className="flex flex-col text-center align-middle">
+                  {ABOUT.map((about:AboutItem,index) => 
+                    <div key={index}className="flex flex-col text-center align-middle">
                         <h1 className="vio-text text-2xl lg:text-5xl font-extrabold">{about.years}</h1>
-                        <h1 className="text-xs md:text-sm lg:text-md text-white">{about.type}</h1>
+                        <h1 className="text-xs md:text-sm lg:text-md text-white  dark:text-[#2C3F50]">{about.type}</h1>
                     </div>
                   )}
              </div>

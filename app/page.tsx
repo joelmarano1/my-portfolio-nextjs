@@ -18,7 +18,7 @@ export default function Home() {
 
 
 
-    <main className="flex min-h-screen flex-col overflow-x-hidden  justify-between px-8 py-4 md:px-16 md:py-8 lg:px-12 xl:px-24  2xl:px-48 3xl:px-56">
+    <main className="bg-gray-100  bg-image dark:bg-blend-screen flex min-h-screen flex-col overflow-x-hidden  justify-between px-8 py-4 md:px-16 md:py-8 lg:px-12 xl:px-24  2xl:px-48 3xl:px-56">
         {!loading ? (
           <Loading/>
         ): (
@@ -31,9 +31,6 @@ export default function Home() {
             <Footer/>
           </div>
         ) } 
-        {/* <Loading/> */}
-
-       
     </main>
   )
 }

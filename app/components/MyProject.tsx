@@ -81,8 +81,8 @@ const MyProject = () => {
             viewport={{amount:0}}
             whileInView="visible"
             >
-            <h1 className="text-xs lg:text-md text-white lg:pl-1">PROJECTS</h1>
-            <h1 className="text-2xl md:text-5xl vio-text font-extrabold"><span className="text-white">Completed</span> Projects</h1>
+            <h1 className="text-xs lg:text-md text-white dark:text-[#2C3F50] lg:pl-1">PROJECTS</h1>
+            <h1 className="text-2xl md:text-5xl vio-text font-extrabold"><span className="text-white dark:text-[#2C3F50]">Completed</span> Projects</h1>
         </MotionDiv>
       </div>
       
@@ -184,21 +184,21 @@ return (
     viewport={{amount:0}}
     whileInView="visible"
     >
-      <div  className=" px-5 py-3 lg:p-10 min-h-[130px] max-h-[150px] lg:max-h-[308px] lg:min-h-[308px] min-w-[250px] max-w-[250px] lg:max-w-[508px] lg:min-w-[508px] rounded-lg bg-[#201537] ">
+      <div  className=" px-5 py-3 lg:p-10 min-h-[130px] max-h-[150px] lg:max-h-[308px] lg:min-h-[308px] min-w-[250px] max-w-[250px] lg:max-w-[508px] lg:min-w-[508px] rounded-lg bg-[#201537] dark:bg-[#ffffff] dark:shadow-lg ">
         <div className="flex flex-row justify-between items-center pb-3 lg:pb-0 ">
           <div>
-            <h1 className="text-md lg:text-lg font-extrabold text-white">{title}</h1>
-            <h1 className="text-[.65rem] lg:text-xs font-light text-white">{company}</h1>
+            <h1 className="text-md lg:text-lg font-extrabold text-white dark:text-[#2C3F50]">{title}</h1>
+            <h1 className="text-[.65rem] lg:text-xs font-light dark:font-medium text-white dark:text-[#2C3F50]">{company}</h1>
           </div>
             <img src={logo} alt=""   className="lg:hidden  object-contain h-20 lg:h-36 xl:h-44 ml-10"/>
         </div>
         <div className="pb-3 lg:pb-5 flex lg:flex-row justify-between lg:items-center lg:h-44">
-            <div className="text-white text-xl lg:text-lg">
-              <p className="md:text-xs lg:text-xs hidden lg:block font-light">{description}</p>
+            <div className="text-white dark:text-[#2C3F50] text-xl lg:text-lg">
+              <p className="md:text-xs lg:text-xs hidden lg:block font-light dark:font-medium">{description}</p>
             </div>
             <img src={logo} alt="" draggable="false" className="hidden lg:block object-contain lg:h-36 xl:h-40 ml-10"/>
         </div>
-        <div className=" text-lg lg:text-2xl text-white flex flex-row justify-between items-center gap-5">
+        <div className=" text-lg lg:text-2xl text-white  dark:text-[#2C3F50] flex flex-row justify-between items-center gap-5">
             <div className="flex flex-row gap-2">
                 {stacks.map((IconComponent, index) => (
                   <IconComponent key={index}  className="text-[#9543ff] text-lg lg:text-2xl" />

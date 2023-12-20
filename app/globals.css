@@ -60,9 +60,13 @@
     transform: rotate(0deg);
   }
 }
-.hero__blob {
+.light .hero__blob {
   fill: var(--first-color);
   filter: drop-shadow(10px 70px 14px rgba(109, 42, 196, 0.15));
+}
+.dark .hero__blob {
+  fill: var(--first-color);
+  filter: drop-shadow(10px 70px 14px rgba(75, 75, 75, 0.15));
 }
 .hero__blob_1 {
   fill: var(--first-color);
@@ -71,10 +75,12 @@
 .hero__blob-img{
  width: 180px;
 }
-.about__blob {
+
+.light .about__blob {
   fill: var(--first-color);
   filter: drop-shadow(30px 20px 54px rgba(109, 42, 196, 0.5));
 }
+
 @layer base {
   .scaleLogo {
     @apply transition ease-in-out delay-0  hover:-translate-y-1 hover:scale-110 duration-150 cursor-pointer
