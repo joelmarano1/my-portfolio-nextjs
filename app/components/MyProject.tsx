@@ -88,7 +88,7 @@ const MyProject = () => {
       
       {isShown ? (
         <div className="lg:col-span-12 p-2">
-          <button onClick={() => setisShown(false)} className=" p-1 outline px-10 xs:px-16 lg:px-[1rem] text-white font-semibold rounded-full shadow-md hover:text-violet-500">
+          <button onClick={() => setisShown(false)} className=" p-1 outline px-10 xs:px-16 lg:px-[1rem] text-white  dark:text-[#2C3F50] font-semibold rounded-full shadow-md hover:text-violet-500">
             Close
           </button> 
           {ss.map((ss) => (
