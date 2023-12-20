@@ -8,7 +8,7 @@ const PrevArrow = (props:any) => {
          style={{ ...style,color:'white', display: "block",position:'absolute',top:'50%', height:"56px", fontSize:"24px"}}
         onClick={onClick}
       >
-        <FaAngleLeft className="text-xl md:text-5xl"/>
+        <FaAngleLeft className="text-xl md:text-5xl text-white  dark:text-[#2C3F50]"/>
       </div>
     );
 }
