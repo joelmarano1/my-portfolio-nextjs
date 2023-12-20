@@ -1,5 +1,4 @@
 import type { Metadata } from 'next'
-import { Montserrat } from 'next/font/google'
 import './globals.css'
 import Navbar from './components/Navbar'
 import { montserrat } from './constants'
@@ -16,13 +15,12 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+
   return (
     <html lang="en">
       {/* bg-gradient-to-br from-[#120E16] to-[#100b15] */}
       <body className={` bg-image ${montserrat.className}`}>
-        <Navbar/>
-        {children}
-        <Footer/>
+          {children}
       </body>
     </html>
   )

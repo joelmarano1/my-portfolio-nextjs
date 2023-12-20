@@ -102,7 +102,7 @@ const MyProject = () => {
         </div>
       ): ""}
       <div className="lg:col-span-12  ">
-          <div className="flex flex-row gap-5 overflow-x-scroll p-2 max-w-[1440px] hide-scrollbar ">
+          <div className="flex flex-row gap-5 overflow-x-scroll p-2 hide-scrollbar ">
           {PROJECTS.map((project) => (
             <ProjectItem 
                 key={project.title}

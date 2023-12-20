@@ -64,6 +64,10 @@
   fill: var(--first-color);
   filter: drop-shadow(10px 70px 14px rgba(109, 42, 196, 0.15));
 }
+.hero__blob_1 {
+  fill: var(--first-color);
+  filter: drop-shadow(0px 20px 12px rgba(109, 42, 196, 0.20));
+}
 .hero__blob-img{
  width: 180px;
 }
@@ -92,3 +96,27 @@
  .slick-prev:before, .slick-next:before  {
   content: '' !important;
 }
+.loader{
+  display: block;
+  position: relative;
+  height: 12px;
+  width: 100%;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.loader:after{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0%;
+  background: #9340FF;
+  animation: 5s prog ease-in ;
+}
+
+@keyframes prog {
+  to  {   width: 100%;}
+}
+

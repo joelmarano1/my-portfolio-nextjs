@@ -14,7 +14,7 @@ const Hero = () => {
         transition={{
           delay:0,
           ease:"anticipate",
-          duration:0.75,
+          duration:0.5,
         }}
         viewport={{amount:0}}
         whileInView="visible"
@@ -64,7 +64,7 @@ const Hero = () => {
         transition={{
           delay:0,
           ease:"anticipate",
-          duration:0.75,
+          duration:0.5,
         }}
         viewport={{amount:0}}
         className="lg:col-span-6">
@@ -88,7 +88,7 @@ const Hero = () => {
           </svg>
         </div>
         <div className="lg:hidden block">
-            <img src="imghero1.jpg" className="rounded-3xl w-full h-48 object-cover" alt="" />
+            <img src="imghero1.jpg" className="rounded-3xl hero__blob_1 w-full h-48 object-cover" alt="" />
         </div>
       </MotionDiv>
     </section>
