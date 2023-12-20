@@ -12,7 +12,7 @@ export default function Home() {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    setTimeout(() => setLoading(true), 5200); 
+    setTimeout(() => setLoading(true), 4900); 
   }, []);
   return (
 
