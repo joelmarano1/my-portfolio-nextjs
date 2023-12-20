@@ -68,7 +68,7 @@ const MyProject = () => {
     setSS(newData);
   }
   return (
-    <section className="grid lg:grid-cols-12  pt-[100px] lg:pt-[0px]  grid-cols-1 gap-10 lg:gap-10 lg:px-4 lg:pb-72">
+    <section id="myproject" className="grid lg:grid-cols-12  pt-[100px] lg:pt-[120px]  grid-cols-1 gap-10 lg:gap-10 lg:px-4 lg:pb-72">
       <div className="lg:col-span-12">
         <MotionDiv
             variants={variantsLTR}

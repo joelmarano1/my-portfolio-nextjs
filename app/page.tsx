@@ -7,6 +7,7 @@ import MyProject from './components/MyProject'
 import Navbar from './components/Navbar'
 import TechStack from './components/TechStack'
 import Loading from './components/Loading'
+import Link from 'next/link'
 
 export default function Home() {
   const [loading, setLoading] = useState(false);

@@ -7,7 +7,7 @@ import Image from "next/image"
 const Hero = () => {  
  
   return (
-    <section className="grid lg:grid-cols-12 pt-[100px] lg:pt-[0px] gap-0 grid-cols-1  items-center lg:px-4 lg:pb-28 ">
+    <section className="grid lg:grid-cols-12 pt-[100px] lg:pt-[10px] gap-0 grid-cols-1  items-center lg:px-4 lg:pb-28 ">
       <MotionDiv 
         variants={variantsLTR}
         initial="hidden"
@@ -42,7 +42,7 @@ const Hero = () => {
               <h1 className="pt-3 text-5xl lg:text-6xl font-bold "><span className="text-white dark:text-[#2C3F50]">Full Stack</span> <span className="vio-text">Developer</span></h1>
               <p className='lg:pb-10 pb-8 pt-2 pl-1 text-[.65rem]  md:text-md lg:text-lg text-gray-400 dark:text-[#2C3F50]'>A dedicated programmer who crafts websites and applications full-time, driven by both passion and livelihood.</p>
               <div className="flex flex-col lg:flex-row lg:items-center justify-start gap-4">
-                <Link href='#'>
+                <Link href='#myproject'>
                   <button  className="flex items-center text-center lg:text-start  p-[.63rem]  px-14 xs:px-16 lg:px-[1rem] bg-violet-800 dark:bg-violet-500 text-white font-semibold rounded-full shadow-md hover:bg-violet-700 focus:outline-violet-700 ">
                     My Projects <FaArrowRight className="ml-2"/>
                   </button> 

@@ -8,7 +8,7 @@ const Aboutme = () => {
     type:string,
   }
   return (
-    <section className="grid lg:grid-cols-12 pt-[100px] lg:pt-[0px] gap-5 grid-cols-1  items-center lg:px-4 lg:pb-72 ">
+    <section className="grid lg:grid-cols-12 pt-[100px] lg:pt-[0px] gap-5 grid-cols-1  items-center lg:px-4 lg:pb-32 ">
         <div className="lg:col-span-12 pb-5 lg:pb-24">
             <MotionDiv
                 variants={variantsLTR}
