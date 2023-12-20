@@ -68,9 +68,13 @@
   fill: var(--first-color);
   filter: drop-shadow(10px 70px 14px rgba(75, 75, 75, 0.15));
 }
-.hero__blob_1 {
+.light .hero__blob_1 {
   fill: var(--first-color);
   filter: drop-shadow(0px 20px 12px rgba(109, 42, 196, 0.20));
+}
+.dark .hero__blob_1 {
+  fill: var(--first-color);
+  filter: drop-shadow(10px 20px 14px rgba(75, 75, 75, 0.15));
 }
 .hero__blob-img{
  width: 180px;
