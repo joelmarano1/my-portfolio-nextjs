@@ -48,7 +48,7 @@ const Hero = () => {
                   </button> 
                 </Link>
                 <Link href='mailto:joelmarano1@gmail.com'>
-                  <button  className="flex items-center text-center lg:text-start  p-2 outline px-14 xs:px-16 lg:px-[1rem] text-white dark:text-violet-500 font-semibold rounded-full shadow-md hover:text-violet-500 focus:outline-none focus:ring-2 focus:ring-violet-700 focus:ring-opacity-75">
+                  <button  className="flex items-center text-center lg:text-start  p-2 outline px-14 xs:px-16 lg:px-[1rem] text-white dark:text-[#2C3F50] font-semibold rounded-full shadow-md hover:text-violet-500 focus:outline-none focus:ring-2 focus:ring-violet-700 focus:ring-opacity-75">
                     Contact Me <FaTelegramPlane className="ml-2"/>
                   </button> 
                 </Link>
