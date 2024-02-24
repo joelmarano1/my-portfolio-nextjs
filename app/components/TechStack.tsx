@@ -124,13 +124,13 @@ const TechStack = () => {
                     <SiVisualbasic size="52" />
                     <span>VB.NET</span>
                 </div>
-                <div className="flex flex-col items-center scaleLogo hover:text-[#195D93]">
-                    <SiVisualbasic size="52" />
-                    <span>VB.NET</span>
-                </div>
                 <div className="flex flex-col items-center scaleLogo hover:text-[#28799E]">
                     <FaWordpress size="52" />
                     <span>Wordpress</span>
+                </div>
+                <div className="flex flex-col items-center scaleLogo hover:text-[#42759C]">
+                    <SiMysql size="52" />
+                    <span>MySQL</span>
                 </div>
                 <div className="flex flex-col items-center scaleLogo hover:text-[#F7692B]">
                     <FaCpanel size="52" />
