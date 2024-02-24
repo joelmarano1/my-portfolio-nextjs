@@ -1,10 +1,11 @@
 import Link from "next/link"
-import { FaArrowRight, FaCpanel, FaFacebookF, FaGithubAlt, FaLaravel, FaLinkedinIn, FaPhp, FaTelegramPlane} from "react-icons/fa"
+import { FaArrowRight, FaCpanel, FaElementor, FaFacebookF, FaGithubAlt, FaLaravel, FaLinkedinIn, FaPhp, FaTelegramPlane} from "react-icons/fa"
 import { MotionDiv } from "./MotionDiv"
 import { variants, variantsLTR,variantsRTL } from "../constants"
 import { TbBrandBootstrap, TbBrandCSharp, TbBrandCss3, TbBrandJavascript, TbBrandLaravel, TbBrandNextjs, TbBrandPhp, TbBrandReact, TbBrandTailwind, TbBrandTypescript } from "react-icons/tb";
 import { SiChakraui, SiDevexpress, SiHtml5, SiJquery, SiMysql, SiVisualbasic } from "react-icons/si";
 import { AiOutlineHtml5 } from "react-icons/ai";
+import { FaWordpress } from "react-icons/fa6";
 const TechStack = () => {  
  
   return (
@@ -84,6 +85,10 @@ const TechStack = () => {
                     <SiDevexpress size="52" />
                     <span>DevExpress</span>
                 </div>
+                <div className="flex flex-col items-center scaleLogo hover:text-[#D73967]">
+                    <FaElementor size="52" />
+                    <span>Elementor</span>
+                </div>
             </div>
         </MotionDiv>
       </div>
@@ -119,9 +124,13 @@ const TechStack = () => {
                     <SiVisualbasic size="52" />
                     <span>VB.NET</span>
                 </div>
-                <div className="flex flex-col items-center scaleLogo hover:text-[#42759C]">
-                    <SiMysql size="52" />
-                    <span>MySQL</span>
+                <div className="flex flex-col items-center scaleLogo hover:text-[#195D93]">
+                    <SiVisualbasic size="52" />
+                    <span>VB.NET</span>
+                </div>
+                <div className="flex flex-col items-center scaleLogo hover:text-[#28799E]">
+                    <FaWordpress size="52" />
+                    <span>Wordpress</span>
                 </div>
                 <div className="flex flex-col items-center scaleLogo hover:text-[#F7692B]">
                     <FaCpanel size="52" />
