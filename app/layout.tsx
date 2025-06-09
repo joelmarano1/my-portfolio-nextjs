@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       {/* bg-gradient-to-br from-[#120E16] to-[#100b15] */}
-      <body className={`  ${montserrat.className}`}>
+      <body className={`${montserrat.className}`}>
       <Providers>
           {children}
       </Providers>

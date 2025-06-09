@@ -53,12 +53,9 @@ const Aboutme = () => {
                 whileInView="visible"
                 >
              <div className="text-white dark:text-[#2C3F50] text-xs md:text-md  lg:text-lg">
-                <p className="indent-10 pb-2">
-                  In 2018, I entered the programming field as a <span className="vio-text font-semibold">C# developer</span>, focusing on desktop applications, database management, and direct client training with on-the-spot debugging. In 2021, I transitioned to web development, currently employed as a <span className="vio-text font-semibold">PHP/Laravel Developer</span> in a private company. 
-                </p>
-                <p className="indent-10">
-                  Additionally, I'm working on side projects involving <span className="vio-text font-semibold">React/Next.js</span> and <span className="vio-text font-semibold">PHP/Laravel</span>, while also improving my skills in cloud server management.
-                </p>
+              <p className="indent-10 pb-2">
+              In 2018, I entered the programming field as a <span className="vio-text font-semibold">C# developer</span>, focusing on desktop applications, database management, and direct client training with on-the-spot debugging. In 2021, I transitioned to web development, and currently employed as a <span className="vio-text font-semibold">Full Stack Developer</span>.
+              </p>
              </div>
              <div className="flex flex-row gap-10 lg:gap-16 pt-5 justify-center">
                   {ABOUT.map((about:AboutItem,index) => 

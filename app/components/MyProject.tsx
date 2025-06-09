@@ -3,19 +3,34 @@ import Link from "next/link"
 import { FaArrowRight, FaEye, FaFacebookF, FaGithubAlt, FaLinkedinIn, FaRegEye, FaTelegramPlane} from "react-icons/fa"
 import { MotionDiv } from "./MotionDiv"
 import {  SCREENSHOTS, variants, variantsLTR } from "../constants"
-import { FaArrowUpRightFromSquare } from "react-icons/fa6"
+import { FaArrowUpRightFromSquare, FaHubspot } from "react-icons/fa6"
 import { TbBrandReact, TbBrandTailwind,TbBrandBootstrap } from "react-icons/tb"
 import {FaPhp,FaLaravel} from "react-icons/fa"
-import {SiJquery}  from "react-icons/si";
+import {SiJquery, SiTailwindcss}  from "react-icons/si";
 import Slider from "react-slick";
 import Image from "next/image"
 import PrevArrow from "../components/slick-customize/PrevArrow"
 import NextArrow from "../components/slick-customize/NextArrow"
 import { useState } from "react"
-
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 const MyProject = () => {  
   const PROJECTS = [
-    
+    {
+      title: 'Cartera Official',
+      logo:'/ssprojects/cartera-logo.png',
+      company:'Cartera Interchange Corp.',
+      url:'https://cartera.com.ph/',
+      description:"Cartera's official website — an Indonesian company providing e-wallet solutions and a range of digital services.",
+      stack: [
+        FaHubspot,
+        SiTailwindcss,
+      ],
+      tag:'cartera',
+    },
     {
         title: 'OTTSS v.1',
         logo:'/ssprojects/tieza-logo.png',
@@ -69,7 +84,7 @@ const MyProject = () => {
   }
   return (
     <section id="myproject" className="grid lg:grid-cols-12  pt-[100px] lg:pt-[120px]  grid-cols-1 gap-10 lg:gap-10 lg:px-4 lg:pb-72">
-      <div className="lg:col-span-12">
+      <div className="lg:col-span-12 ">
         <MotionDiv
             variants={variantsLTR}
             initial="hidden"
@@ -101,12 +116,23 @@ const MyProject = () => {
           ))}
         </div>
       ): ""}
-      <div className="lg:col-span-12  ">
-          <div className="flex flex-row gap-5 overflow-x-scroll p-2 hide-scrollbar ">
+      <div className="lg:col-span-12">
+        <Swiper
+          modules={[Navigation, Pagination]}
+          spaceBetween={10}
+          slidesPerView={3}
+          breakpoints={{
+            0: { slidesPerView: 1.3 },
+            768: { slidesPerView: 2.5 },
+            1024: { slidesPerView: 1.6 },
+            1080: { slidesPerView: 2.2 },
+
+          }}
+        >
           {PROJECTS.map((project) => (
-            <ProjectItem 
-                key={project.title}
-                title={project.title} 
+             <SwiperSlide key={project.title}>
+              <ProjectItem
+                title={project.title}
                 logo={project.logo}
                 company={project.company}
                 url={project.url}
@@ -114,9 +140,10 @@ const MyProject = () => {
                 stacks={project.stack}
                 tag={project.tag}
                 handleView={handleView}
-            />
-            ))}
-          </div>
+              />
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
     </section>
   )
@@ -190,7 +217,7 @@ return (
             <h1 className="text-md lg:text-lg font-extrabold text-white dark:text-[#2C3F50]">{title}</h1>
             <h1 className="text-[.65rem] lg:text-xs font-light dark:font-medium text-white dark:text-[#2C3F50]">{company}</h1>
           </div>
-            <img src={logo} alt=""   className="lg:hidden  object-contain h-20 lg:h-36 xl:h-44 ml-10"/>
+            <img src={logo} alt=""   className="lg:hidden  object-cover h-20 lg:h-36 xl:h-44 ml-10"/>
         </div>
         <div className="pb-3 lg:pb-5 flex lg:flex-row justify-between lg:items-center lg:h-44">
             <div className="text-white dark:text-[#2C3F50] text-xl lg:text-lg">

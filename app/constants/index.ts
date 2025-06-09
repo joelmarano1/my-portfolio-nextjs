@@ -2,7 +2,7 @@ import { Montserrat } from "next/font/google";
 import PrevArrow from "../components/slick-customize/PrevArrow"
 
 export const montserrat = Montserrat({
-    //  weight: "700",
+    weight: ['400','500','600','700'],
     subsets: ['latin'],
     display: 'swap',
     })
@@ -19,6 +19,14 @@ export const variants = {
     visible: {opacity: 1, },
 };
 export const SCREENSHOTS = [
+    {
+        title: 'Cartera Official',
+        tag:'cartera',
+        images:[
+            '/ssprojects/cartera1.png',
+            '/ssprojects/cartera2.png',
+        ]
+    },
     {
         title: 'OTTSS v.1',
         tag:'ottss',
@@ -51,15 +59,15 @@ export const SCREENSHOTS = [
 ];
 export const ABOUT = [
     {
-        years: '5+',
+        years: '7+',
         type: 'Years of Experience'
     },
     {
-        years: '7+',
+        years: '9+',
         type: 'Finished Projects'
     },
     {
-        years: '4',
+        years: '6',
         type: 'Companies Worked'
     },
 ]

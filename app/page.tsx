@@ -13,13 +13,13 @@ export default function Home() {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    setTimeout(() => setLoading(true), 4900); 
+    setTimeout(() => setLoading(true), 1000); 
   }, []);
   return (
 
 
 
-    <main className="bg-gray-100  bg-image dark:bg-blend-screen flex min-h-screen flex-col overflow-x-hidden  justify-between px-8 py-4 md:px-16 md:py-8 lg:px-12 xl:px-24  2xl:px-48 3xl:px-56">
+    <main className="bg-image dark:bg-blend-screen bg-slate-200 flex min-h-screen flex-col overflow-x-hidden  justify-between px-8 py-4 md:px-16 md:py-8 lg:px-12 xl:px-24  2xl:px-48 3xl:px-56">
         {!loading ? (
           <Loading/>
         ): (
